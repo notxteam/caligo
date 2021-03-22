@@ -4,8 +4,8 @@ on: workflow_dispatch
 
 env:
   IMAGE_NAME: caligo
-  HEROKU_API_KEY: ${{ f2e07efd-7d83-422a-ad02-83a36bd5f2b3 }}
-  HEROKU_APP: ${{ caligood }}
+  HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+  HEROKU_APP: ${{ secrets.HEROKU_APP }}
 
 jobs:
   build_and_push:
